@@ -2,12 +2,12 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
     
-    <name>robot_properties_bolt</name>
+    <name>robot_properties_tocabi</name>
     
     <version>1.0.0</version>
     
     <description>
-        URDFs of the Bolt robot and configurations files of different
+        URDFs of the TOCABI robot and configurations files of different
         application like controllers, planners and so forth.
     </description>
     

@@ -5,6 +5,7 @@ Copyright (c) 2021, New York University and Max Planck Gesellschaft.
 """
 
 import sys
+sys.path.append('/opt/ros/melodic/share/')
 from os import path, walk
 from shutil import rmtree
 from pathlib import Path
@@ -13,7 +14,7 @@ from setuptools.command.build_py import build_py
 
 
 # Defines the paramters of this package:
-package_name = "robot_properties_bolt"
+package_name = "robot_properties_tocabi"
 package_version = "1.0.0"
 
 
@@ -150,7 +151,7 @@ class custom_build_py(build_py):
         # build documentation.
         self._build_doc()
         # build the xacro files into urdf files.
-        self._build_xacro()
+        #self._build_xacro()
         # distutils uses old-style classes, so no super()
         build_py.run(self)
 
@@ -176,7 +177,7 @@ setup(
     maintainer_email="mnaveau@tuebingen.mpg.de",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/open-dynamic-robot-initiative/robot_properties_bolt",
+    #url="https://github.com/open-dynamic-robot-initiative/robot_properties_bolt",
     description="Wrapper around the pybullet interface using pinocchio.",
     license="BSD-3-clause",
     tests_require=["pytest"],
